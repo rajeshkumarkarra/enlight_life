@@ -1,0 +1,193 @@
+{% extends 'life/base.html' %}
+
+{% load static %}
+
+
+
+{% block content %}
+<!--
+    <div class="container">
+        <div class="row" style="margin-top: 100px">
+           <div class="col-sm-6">
+              <form class="form-inline" action="{% url 'home' %}" method="post">
+                  {% csrf_token %}
+  <label class="sr-only" for="inlineFormInputName2">First Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="First Name" name="fname">
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Last Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Last Name" name="lname">
+  
+
+  <button type="submit" class="btn btn-secondary mb-2">Tell me a Chuck Norries joke!</button>
+</form>   
+</div>
+        
+        <div class="col-sm-6">
+            <div class="card" style="width: 40rem;">
+              <div class="card-body">
+                <h5 class="card-title">Chuck Norries</h5>
+                
+                <p class="card-text">
+                    {{ joker }}
+                    </p>
+                <a href="{% url 'downloads' %}" class="card-link">Here are downloads</a>
+                
+        </div>
+            
+        </div>
+            
+                
+    
+</div>
+-->
+<!-- -------------------------Carousel starts----------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LEAP Consultancy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Navbar starts -->
+
+<!-- Navbar ends -->
+
+
+<div class="container">
+  <h2>Photos</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+ 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{% static 'life/images/Dr.Joseph.jpg' %}" alt="LEFI" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="{% static 'life/images/Dr.Joseph1.jpg' %}" alt="LEFI" style="width:100%;">
+      </div>
+    
+     
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
+<!-- -------------------------Carousel ends----------------------- -->
+
+<!--Dropbox integration --starts -->
+    <title>LEFI Images and Messages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="e9cv6rw69ssn4qb"></script>
+<script type="text/javascript" src="https://www.dropbox.com/oauth2/authorize?client_id=e9cv6rw69ssn4qb&response_type=code"></script>
+ 
+    
+<!-- dropbox app key of lefigospel@gmail.com(dropbox)-->
+    
+    
+<html>  
+</head>
+  
+<body> 
+    
+<div class="container">  
+  <div class="row">
+  <div class="small-12 columns">
+    <h1>Upload & View Images/Audio</h1>
+    <a href="https://dl.dropboxusercontent.com/s/deroi5nwm6u7gdf/advice.png" class="dropbox-saver"></a>
+
+    <div id="dropbox-container"></div>
+    <hr>
+    <ul id="img_list" class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+    </ul>
+  </div>
+</div>
+</div>
+<script>
+  options = {
+    success: function(files) {
+      files.forEach(function(file) {
+        add_img_to_list(file);
+      });
+    },
+    cancel: function() {
+      //optional
+    },
+    linkType: "preview", // "preview" or "direct"
+    multiselect: true, // true or false
+    extensions: ['.png', '.jpg'],
+};
+ 
+var button = Dropbox.createChooseButton(options);
+document.getElementById("dropbox-container").appendChild(button);
+  
+
+
+function add_img_to_list(file) {
+  var li  = document.createElement('li');
+  var a   = document.createElement('a');
+  a.href = file.link;
+  var img = new Image();
+  var src = file.thumbnailLink;
+  src = src.replace("bounding_box=75", "bounding_box=256");
+  src = src.replace("mode=fit", "mode=crop");
+  img.src = src;
+  img.className = "th"
+  document.getElementById("img_list").appendChild(li).appendChild(a).appendChild(img);
+}
+
+</script>
+
+
+<!--Dropbox integration ----------------ends -->
+  
+  </body>
+  
+</html>
+
+
+
+
+{% endblock %}
+
+
+
+
+
+      
+
+
+  
+        
+ 
+
+ 
+
+
+
+ 
