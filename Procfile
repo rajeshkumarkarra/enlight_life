@@ -1,1 +1,1 @@
-web: gunicorn enlight_life --log-file -
+web: gunicorn enlight_life.wsgi --log-file -
