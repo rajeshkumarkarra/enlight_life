@@ -1,3 +1,5 @@
+
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -6,27 +8,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Charity</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="{% static 'ngo/img/favicon.png' %}">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/bootstrap.min.css' %}">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/animate.css' %}">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/owl.carousel.min.css' %}">
     <!-- themify CSS -->
-    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/themify-icons.css' %}">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/all.css' %}">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/flaticon.css' %}">
     <!-- magnific popup CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/magnific-popup.css' %}">
     <!-- nice select CSS -->
-    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/nice-select.css' %}">
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/slick.css' %}">
     <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/style.css' %}">
 </head>
 
 <body>
@@ -36,7 +38,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="{% static 'ngo/img/logo.png' %}" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -110,7 +112,7 @@
                 <div class="col-lg-7">
                     <div class="banner_video">
                         <div class="banner_video_iner">
-                            <img src="img/banner_video.png" alt="">
+                            <img src="{% static 'ngo/img/banner_video.png' %}" alt="">
                             <div class="extends_video">
                                 <a id="play-video_1" class="video-play-button popup-youtube"
                                     href="https://www.youtube.com/watch?v=pBFQdxA-apI">
@@ -189,8 +191,8 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6">
-                    <div class="about_us_img">
-                        <img src="img/top_service.png" alt="">
+                    <div class="{% static 'ngo/about_us_img' %}">
+                        <img src="{% static 'ngo/img/top_service.png' %}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -252,7 +254,7 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-passion">
                         <div class="card">
-                            <img src="img/passion/passion_1.png" class="card-img-top" alt="blog">
+                            <img src="{% static 'ngo/img/passion/passion_1.png' %}" class="card-img-top" alt="blog">
                             <div class="card-body">
 
                                 <a href="#">
@@ -260,8 +262,8 @@
                                         created subdue be </h5>
                                 </a>
                                 <ul>
-                                    <li><img src="img/icon/passion_1.svg" alt=""> Goal: $2500</li>
-                                    <li><img src="img/icon/passion_2.svg" alt=""> Raised: $1533</li>
+                                    <li><img src="{% static 'ngo/img/icon/passion_1.svg' %}" alt=""> Goal: $2500</li>
+                                    <li><img src="{% static 'ngo/img/icon/passion_2.svg' %}" alt=""> Raised: $1533</li>
                                 </ul>
                                 <div class="skill">
                                         <div class="skill-bar skill11 wow slideInLeft animated">
@@ -276,15 +278,15 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-passion">
                         <div class="card">
-                            <img src="img/passion/passion_2.png" class="card-img-top" alt="blog">
+                            <img src="{% static 'ngo/img/passion/passion_2.png' %}" class="card-img-top" alt="blog">
                             <div class="card-body">
                                 <a href="#">
                                     <h5 class="card-title">Fourth created forth fill
                                         created subdue be </h5>
                                 </a>
                                 <ul>
-                                    <li><img src="img/icon/passion_1.svg" alt=""> Goal: $2500</li>
-                                    <li><img src="img/icon/passion_2.svg" alt=""> Raised: $1533</li>
+                                    <li><img src="{% static 'ngo/img/icon/passion_1.svg' %}" alt=""> Goal: $2500</li>
+                                    <li><img src="{% static 'ngo/img/icon/passion_2.svg' %}" alt=""> Raised: $1533</li>
                                 </ul>
                                 <div class="skill">
                                         <div class="skill-bar skill11 wow slideInLeft animated">
@@ -300,15 +302,15 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-passion">
                         <div class="card">
-                            <img src="img/passion/passion_3.png" class="card-img-top" alt="blog">
+                            <img src="{% static 'ngo/img/passion/passion_3.png' %}" class="card-img-top" alt="blog">
                             <div class="card-body">
                                 <a href="#">
                                     <h5 class="card-title">Fourth created forth fill
                                         created subdue be </h5>
                                 </a>
                                 <ul>
-                                    <li><img src="img/icon/passion_1.svg" alt=""> Goal: $2500</li>
-                                    <li><img src="img/icon/passion_2.svg" alt=""> Raised: $1533</li>
+                                    <li><img src="{% static 'ngo/img/icon/passion_1.svg' %}" alt=""> Goal: $2500</li>
+                                    <li><img src="{% static 'ngo/img/icon/passion_2.svg' %}" alt=""> Raised: $1533</li>
                                 </ul>
                                 <div class="skill">
                                         <div class="skill-bar skill11 wow slideInLeft animated">
@@ -358,7 +360,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="single_event media">
-                        <img src="img/event_1.png" class="align-self-center" alt="...">
+                        <img src="{% static 'ngo/img/event_1.png' %}" class="align-self-center" alt="...">
                         <div class="tricker">10 Jun</div>
                         <div class="media-body align-self-center">
                             <h5 class="mt-0">Volunteeer Idea 2020</h5>
@@ -373,7 +375,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="single_event media">
-                        <img src="img/event_2.png" class="align-self-center" alt="...">
+                        <img src="{% static 'ngo/img/event_2.png' %}" class="align-self-center" alt="...">
                         <div class="tricker">10 Jun</div>
                         <div class="media-body align-self-center">
                             <h5 class="mt-0">Volunteeer Idea 2020</h5>
@@ -389,7 +391,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="single_event media">
-                        <img src="img/event_3.png" class="align-self-center" alt="...">
+                        <img src="{% static 'ngo/img/event_3.png' %}" class="align-self-center" alt="...">
                         <div class="tricker">10 Jun</div>
                         <div class="media-body align-self-center">
                             <h5 class="mt-0">Volunteeer Idea 2020</h5>
@@ -404,7 +406,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="single_event media">
-                        <img src="img/event_4.png" class="align-self-center" alt="...">
+                        <img src="{% static 'ngo/img/event_4.png' %}" class="align-self-center" alt="...">
                         <div class="tricker">10 Jun</div>
                         <div class="media-body align-self-center">
                             <h5 class="mt-0">Volunteeer Idea 2020</h5>
@@ -438,7 +440,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_blog">
                         <div class="appartment_img">
-                            <img src="img/blog/blog_1.png" alt="">
+                            <img src="{% static 'ngo/img/blog/blog_1.png' %}" alt="">
                         </div>
                         <div class="single_appartment_content">
                             <a href="blog.html">
@@ -459,7 +461,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_blog">
                         <div class="appartment_img">
-                            <img src="img/blog/blog_2.png" alt="">
+                            <img src="{% static 'ngo/img/blog/blog_2.png' %}" alt="">
                         </div>
                         <div class="single_appartment_content">
                             <a href="blog.html">
@@ -480,8 +482,8 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_blog">
-                        <div class="appartment_img">
-                            <img src="img/blog/blog_3.png" alt="">
+                        <div class="{% static 'ngo/appartment_img' %}">
+                            <img src="{% static 'ngo/img/blog/blog_3.png' %}" alt="">
                         </div>
                         <div class="single_appartment_content">
                             <a href="blog.html">
@@ -517,20 +519,20 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <div class="client_logo owl-carousel">
-                        <div class="single_client_logo">
-                            <img src="img/client_logo/Logo_1.png" alt="">
+                        <div class="{% static 'ngo/single_client_logo' %}">
+                            <img src="{% static 'ngo/img/client_logo/Logo_1.png' %}" alt="">
                         </div>
-                        <div class="single_client_logo">
-                            <img src="img/client_logo/Logo_2.png" alt="">
+                        <div class="{% static 'ngo/single_client_logo' %}">
+                            <img src="{% static 'ngo/img/client_logo/Logo_2.png' %}" alt="">
                         </div>
-                        <div class="single_client_logo">
-                            <img src="img/client_logo/Logo_3.png" alt="">
+                        <div class="{% static 'ngo/single_client_logo' %}">
+                            <img src="{% static 'ngo/img/client_logo/Logo_3.png' %}" alt="">
                         </div>
-                        <div class="single_client_logo">
-                            <img src="img/client_logo/Logo_4.png" alt="">
+                        <div class="{% static 'ngo/single_client_logo' %}">
+                            <img src="{% static 'ngo/img/client_logo/Logo_4.png' %}" alt="">
                         </div>
-                        <div class="single_client_logo">
-                            <img src="img/client_logo/Logo_5.png" alt="">
+                        <div class="{% static 'ngo/single_client_logo' %}">
+                            <img src="{% static 'ngo/img/client_logo/Logo_5.png' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -545,7 +547,7 @@
             <div class="row justify-content-around">
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_footer_part">
-                        <img src="img/footer_logo.png" class="footer_logo" alt="">
+                        <img src="{% static 'ngo/img/footer_logo.png' %}" class="footer_logo" alt="">
                         <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open
                         </p>
                         <div class="work_hours">
@@ -572,30 +574,30 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_footer_part footer_3">
                         <h4> our Gallery</h4>
-                        <div class="footer_img">
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_1.png" alt="">
+                        <div class="{% static 'ngo/footer_img' %}">
+                            <div class="{% static 'ngo/single_footer_img' %}">
+                                <img src="{% static 'ngo/img/footer_img/footer_img_1.png' %}" alt="">
                             </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_2.png" alt="">
+                            <div class="{% static 'ngo/single_footer_img' %}">
+                                <img src="{% static 'ngo/img/footer_img/footer_img_2.png' %}" alt="">
                             </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_3.png" alt="">
+                            <div class="{% static 'ngo/single_footer_img' %}">
+                                <img src="{% static 'ngo/img/footer_img/footer_img_3.png' %}" alt="">
                             </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_4.png" alt="">
+                            <div class="{% static 'ngo/single_footer_img' %}">
+                                <img src="{% static 'ngo/img/footer_img/footer_img_4.png' %}" alt="">
                             </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_5.png" alt="">
+                            <div class="{% static 'ngo/single_footer_img' %}">
+                                <img src="{% static 'ngo/img/footer_img/footer_img_5.png' %}" alt="">
                             </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_6.png" alt="">
+                            <div class="{% static 'ngo/single_footer_img' %}">
+                                <img src="{% static 'ngo/img/footer_img/footer_img_6.png' %}" alt="">
                             </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_7.png" alt="">
+                            <div class="{% static 'ngo/single_footer_img' %}">
+                                <img src="{% static 'ngo/img/footer_img/footer_img_7.png' %}" alt="">
                             </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_8.png" alt="">
+                            <div class="{% static 'ngo/single_footer_img' %}">
+                                <img src="{% static 'ngo/img/footer_img/footer_img_8.png' %}" alt="">
                             </div>
                         </div>
                     </div>
@@ -626,9 +628,10 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="copyright_text">
-                        <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <!--
+                        <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. </P>-->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -648,36 +651,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- jquery plugins here-->
 
-    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="{% static 'ngo/js/jquery-1.12.1.min.js' %}"></script>
     <!-- popper js -->
-    <script src="js/popper.min.js"></script>
+    <script src="{% static 'ngo/js/popper.min.js' %}"></script>
     <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'ngo/js/bootstrap.min.js' %}"></script>
     <!-- easing js -->
-    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="{% static 'ngo/js/jquery.magnific-popup.js' %}"></script>
     <!-- swiper js -->
-    <script src="js/swiper.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="{% static 'ngo/js/swiper.min.js' %}"></script>
+    <script src="{% static 'ngo/js/wow.min.js' %}"></script>
+    <script src="{% static 'ngo/js/jquery.smooth-scroll.min.js' %}"></script>
     <!-- swiper js -->
-    <script src="js/masonry.pkgd.js"></script>
+    <script src="{% static 'ngo/js/masonry.pkgd.js' %}"></script>
     <!-- particles js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="{% static 'ngo/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'ngo/js/jquery.nice-select.min.js' %}"></script>
     <!-- swiper js -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/countdown.jquery.min.js"></script>
-    <script src="js/timer.js"></script>
+    <script src="{% static 'ngo/js/slick.min.js' %}"></script>
+    <script src="{% static 'ngo/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'ngo/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'ngo/js/countdown.jquery.min.js' %}"></script>
+    <script src="{% static 'ngo/js/timer.js' %}"></script>
     <!-- contact js -->
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="{% static 'ngo/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'ngo/js/jquery.form.js' %}"></script>
+    <script src="{% static 'ngo/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'ngo/js/mail-script.js' %}"></script>
+    <script src="{% static 'ngo/js/contact.js' %}"></script>
     <!-- custom js -->
-    <script src="js/custom.js"></script>
+    <script src="{% static 'ngo/js/custom.js' %}"></script>
 </body>
 
 </html>
