@@ -78,3 +78,4 @@ def contact(request):
         return render(request, 'life/contact.html')
     
     # c = Student(first_name ='', last_name='')
+

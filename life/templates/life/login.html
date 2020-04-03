@@ -1,0 +1,11 @@
+{% extends 'life/base.html' %}
+
+{ % block body %}
+<h1>Welcome</h1>
+<p>You can login here</p>
+<h2>Login</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+{% endblock %}
