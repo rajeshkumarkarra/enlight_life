@@ -5,6 +5,7 @@ from .models import Fundraise
 
 # Create your views here.
 def index(request):
+    """
     #object of class in models.py
     fund = Fundraise()
     #initialize the class content  
@@ -36,5 +37,7 @@ def index(request):
     fund2.skillcount = True
 
     funds =[fund, fund1, fund2]
+    """
+    funds = Fundraise.objects.all()
     return render(request, 'ngo/index.html', {'funds':funds})
 
