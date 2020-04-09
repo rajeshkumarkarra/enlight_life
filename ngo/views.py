@@ -40,4 +40,8 @@ def index(request):
     """
     funds = Fundraise.objects.all()
     return render(request, 'ngo/index.html', {'funds':funds})
+"""
+    def contact(request):
+        return render(request, 'ngo/contact.html')
 
+"""

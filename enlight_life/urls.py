@@ -11,6 +11,7 @@ urlpatterns =[
     path('life', include('life.urls')),
     path('', include('ngo.urls')),
     path('hi', include('hi.urls')),
+    path('accounts/', include('accounts.urls')),
     path('admin/', admin.site.urls),
 ]
 # for media files
