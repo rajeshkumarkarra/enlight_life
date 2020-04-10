@@ -23,7 +23,7 @@ def login(request):
 
     else:
         
-        return render(request, 'login.html')
+        return render(request, 'acconts/login.html')
 
 
 def register(request):
