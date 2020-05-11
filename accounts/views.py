@@ -41,7 +41,7 @@ def register(request):
             if User.objects.filter(username=username).exists():
                 messages.info(request, 'Username Taken')
                 return redirect('register')
-            elif User.objects.filter(email=email).exists():
+            elif User.objects.filter(email=email).exists(): 
                 messages.info(request, 'Email Taken')
                 return redirect('register')
             else:
